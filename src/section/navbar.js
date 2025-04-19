@@ -117,7 +117,7 @@ export default function Navbar() {
             </div>
 
             <Link
-              href="/account"
+              href="/account/login"
               className="text-gray-700 hover:text-gray-900"
             >
               <FaUser size={28} />
