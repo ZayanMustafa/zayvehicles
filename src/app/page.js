@@ -1,7 +1,19 @@
-import { MainPage } from "@/pages/Mainpage.js";
+import React from "react";
+import Navbar from "@/section/navbar";
+import Hero from "@/section/hero";
+import Product from "@/section/products";
+import Footer from "@/section/footer";
 
 export default function Home() {
   return (
-        <MainPage/>
+
+    <>
+      <Navbar />
+      <Hero />
+      <Product />
+      {/* <WhyUs/>    */}
+      <Footer />
+    </>
+
   );
 }

@@ -90,7 +90,7 @@ export default function Product() {
             <FiSearch className="w-12 h-12 text-gray-400 mb-4" />
             <h3 className="text-xl font-medium text-gray-700 mb-2">No results found</h3>
             <p className="text-gray-500 max-w-md">
-              We couldn't find any matches for your search. Try adjusting your filters or search terms.
+              We couldn&apos;t find any matches for your search. Try adjusting your filters or search terms.
             </p>
             <button 
               onClick={clearFilters}

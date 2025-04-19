@@ -18,7 +18,7 @@ export default function NotFound() {
 
         {/* Message */}
         <p className="text-lg md:text-xl text-yellow-600 max-w-lg mx-auto">
-          Oops! The page you're looking for doesn't exist or may have been moved.
+          Oops! The page you&apos;re looking for doesn&apos;t exist or may have been moved.
         </p>
 
         {/* Home Button */}

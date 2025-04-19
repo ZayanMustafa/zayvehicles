@@ -53,28 +53,28 @@ const WhyUs = () => {
         observer.unobserve(currentWhyUsRef);
       }
     };
-  }, []);
+  });
 
   useEffect(() => {
     const content = contentRef.current;
     if (!content || !isWhyUsActive) return;
-
+  
     const handleScroll = () => {
       if (!content) return;
-
+  
       const { scrollTop, clientHeight } = content;
       const sectionHeight = clientHeight / sections.length;
       const newIndex = Math.floor(scrollTop / sectionHeight);
-
+  
       if (newIndex !== activeIndex) {
         setActiveIndex(newIndex);
       }
-
+  
       if (scrollTop + clientHeight >= content.scrollHeight - 10) {
         setIsWhyUsActive(false);
       }
     };
-
+  
     content.addEventListener('scroll', handleScroll);
     
     return () => {
@@ -82,8 +82,8 @@ const WhyUs = () => {
         content.removeEventListener('scroll', handleScroll);
       }
     };
-  }, [isWhyUsActive, activeIndex]);
-
+  }, [isWhyUsActive, activeIndex, sections.length]); 
+  
   useEffect(() => {
     document.body.style.overflow = isWhyUsActive ? 'hidden' : 'auto';
     return () => {

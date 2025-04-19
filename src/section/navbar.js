@@ -11,10 +11,7 @@ import {
   FiShoppingCart,
   FiShoppingBag
 } from "react-icons/fi";
-import {
-  RiAccountBoxLine,
-  RiAccountBoxFill
-} from "react-icons/ri";
+
 import { FaUser } from "react-icons/fa";
 import NavLink from "@/components/Navbar/navlinks";
 import MobileNavLink from "@/components/Navbar/mobilenavlinks";

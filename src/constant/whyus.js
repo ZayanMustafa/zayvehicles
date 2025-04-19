@@ -11,7 +11,7 @@ import{  FiDollarSign, FiAward ,FiCheckCircle } from "react-icons/fi";
       title: "Affordable Pricing",
       icon: <FiDollarSign className="text-4xl mb-4 text-green-400" />,
       content:
-        "We believe luxury shouldn't break the bank. Our competitive pricing ensures you get the best value without compromising on quality or features.",
+        "We believe luxury shouldn&apos;t break the bank. Our competitive pricing ensures you get the best value without compromising on quality or features.",
     },
     {
       title: "Exceptional Service",
